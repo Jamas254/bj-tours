@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>BJ TOURS AND ADVENTURES</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+<section class="hero-slideshow">
+  <div class="slide active">
+    <video autoplay muted loop playsinline>
+<source src="your video1.mp4" type="video/mp4">
+Your browser does not support the video tag.
+    </video>
+    <video autoplay muted loop playsinline>
+<source src="your video2.mp4" type="video/mp4">
+Your browser does not support the video tag.
+    </video>
+    <video autoplay muted loop playsinline>
+<source src="your video3.mp4" type="video/mp4">
+Your browser does not support the video tag.
+    </video>
+    <video autoplay muted loop playsinline>
+<source src="your video4.mp4" type="video/mp4">
+Your browser does not support the video tag.
+    </video>
+    </div>
+
+    <div class="slide">
+      <img src="image1.jpg">
+    </div>
+
+    <div class="slide">
+      <img src="image2.jpg">
+    </div>
+
+     <div class="slide">
+      <img src="image3.jpg">
+    </div>
+
+     <div class="slide">
+      <img src="image4.jpg">
+    </div>
+
+     <div class="slide">
+      <img src="image5.jpg">
+    </div>
+
+    <div class="slide">
+      <img src="image6.jpg">
+    </div>
+
+    <div class="slide">
+      <img src="image7.jpg">
+    </div>
+
+    <div class="slide">
+      <img src="image8.jpg">
+    </div>
+
+    <div class="slide">
+      <img src="image9.jpg">
+    </div>
+
+ <div class="hero-text">
+        <h1>Discover Kenya</h1>
+        <p>Your adventure begins with BJ Tours</p>
+        <a href="#contact" class="btn">Book Now</a>
+      </div>
+    </section>
+
+ <div class="cta-buttons">
+      <a href="#about" class="btn-secondary">Learn More</a>
+    </div>
+
+<header>
+      <h1>BJ TOURS AND ADVENTURES</h1>
+      <p>Explore Kenya with Passion and Purpose</p>
+    </header>
+    
+    <div class="section about" id="about">
+        <div class="about-container">
+            <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        BJ Tours and Adventure is a proudly Kenyan tour company dedicated to giving you unforgettable travel experiences across Kenya and East Africa. Whether you are looking for thrilling wildlife safaris, cultural explorations, scenic getaways, or relaxing beach holidays, we've got you covered!<br><br>
+
+        We specialize in both customized private tours and group adventures, designed to suit your style, budget, and schedule. Our experienced guides, friendly team, and deep local knowledge ensure that every journey with us is exciting, safe, and full of discovery.<br><br>
+
+        At BJ Tours and Adventure, we don’t just take you to the destination – we help you live the experience. From the wild plains of the Maasai Mara, the peaceful shores of Lake Naivasha, to the vibrant city life of Nairobi, we show you Kenya’s best – and beyond.<br><br>
+
+        Join us and let your next adventure begin!
+      </p>
+      <a href="#contact" class="btn">📞 Contact Us</a>
+    </div>
+
+
+      <div class="section services" id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Safari Tours & Game Drives</li>
+        <li>City Tours & Cultural Visits</li>
+        <li>Airport Transfers</li>
+        <li>Beach Holidays</li>
+        <li>Hotel Bookings & Travel Consultation</li>
+      </ul>
+      <a href="#contact" class="btn">🧭 Book a Tour</a>
+    </div>
+
+    <div class="section contact" id="contact">
+      <h2>Contact Us</h2>
+      <p><strong>Phone:</strong> +254 722814950</p>
+      <p><strong>Email:</strong> chrisgathenya@gmail.com</p>
+    </div>
+
+    <div class="whatsapp-container">
+      <a href="https://wa.me/254722814950?text=Hello!%20I'm%20interested%20in%20booking%20a%20tour%20with%20BJ%20Tours%20and%20Adventures." 
+         class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+        💬
+      </a>
+      <span class="whatsapp-label">Chat with us</span>
+    </div>
+    <section class="hero-banner">
+      <div class="hero-text">
+        <h1>Discover Kenya</h1>
+        <p>Your adventure begins with BJ Tours</p>
+        <a href="#contact" class="btn">Book Now</a>
+      </div>
+    </section>
+
+    <section class="why-choose-us">
+  <h2>Why Choose BJ Tours?</h2>
+  <div class="features">
+    <div class="feature">
+      <h3>🌍 Expert Local Guides</h3>
+      <p>Our guides know every hidden gem, ensuring you enjoy authentic experiences.</p>
+    </div>
+
+    <div class="feature">
+      <h3>💰 Affordable Packages</h3>
+      <p>We offer budget-friendly trips without compromising on quality.</p>
+    </div>
+
+    <div class="feature">
+      <h3>🛡️ Safe & Comfortable Travel</h3>
+      <p>Your safety is our top priority — from transport to accommodation.</p>
+    </div>
+  </div>
+</section>
+
+    <footer>
+      <div class="footer-content">
+      <p>© 2025 BJ TOURS AND ADVENTURES. All Rights Reserved.</p>
+    <p>📍 Nairobi, Kenya | 📞 +254 722 814 950 | ✉️ info@bjtours.com</p>
+  </div>  
+  </footer>
+    <a href="#" class="back-to-top" title="Back to Top">⬆</a>
+
+    <script>
+  const slides = document.querySelectorAll(".hero-slideshow .slide");
+  let index = 0;
+
+  function showSlide(i) {
+    slides.forEach((slide, idx) => {
+      slide.classList.toggle("active", idx === i);
+    });
+  }
+
+  function nextSlide() {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+  }
+
+  // Start the slideshow
+  setInterval(nextSlide, 4000); // every 4 seconds
+
+  // Show the first slide immediately
+  window.onload = () => {
+    showSlide(index);
+  };
+</script>
+
+  </body>
+</html>
